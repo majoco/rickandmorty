@@ -1,29 +1,9 @@
 <template>
-  <div>    
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">          
-          <HelloWorld msg=""/>      
-        </div>
-      </div>
-    </div>
-    <Listar />
-    <p>Hecho por Francisco Javier Ramirez para su evaluacion</p>
+  <div id="nav">
+    <router-link to="/">Home</router-link>
   </div>
+  <router-view/>
 </template>
-
-<script>
-import Listar from './components/Listar.vue'
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {  
-  name: 'App',
-  components: {
-    Listar,
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -32,8 +12,21 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
 .caja{
     background: lightgray;
     margin: 5px;
@@ -50,6 +43,15 @@ img{
 }
 .row::marker{
   color: transparent;
+}
+.about>.col-3 {
+  margin: auto;
+}
+.tleft{
+  text-align: left;
+}
+.caja_detalle{
+  padding: 30px;
 }
 
 @media screen and (max-width: 992px) {
