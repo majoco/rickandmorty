@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">          
-          <HelloWorld msg="aja"/>      
+          <HelloWorld msg=""/>      
         </div>
       </div>
     </div>
