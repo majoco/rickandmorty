@@ -8,6 +8,7 @@
       </div>
     </div>
     <Listar />
+    <p>Hecho por Francisco Javier Ramirez para su evaluacion</p>
   </div>
 </template>
 
@@ -40,9 +41,15 @@ export default {
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+.caja:hover{
+  box-shadow: 0px 0px 10px #888888;
+}
 img{
   width: 100%;
   border-radius: 10px 10px 0px 0px;
+}
+.row::marker{
+  color: transparent;
 }
 
 @media screen and (max-width: 992px) {
@@ -54,6 +61,10 @@ img{
   .card-body>.container>.row {
     display: list-item;
   }
-
+}
+@media screen and (max-width: 480px) {
+  .col-3 {      
+    display: contents;
+  }
 }
 </style>
