@@ -13,7 +13,7 @@
                         <div class="caja">
                             <img :src="personaje.image">
                             <h3>{{personaje.name}}</h3>                        
-                            <a class="btn btn-info" :href="'/about/?id=' + personaje.id">Detalle</a>
+                            <a class="btn btn-info" :href="'/about/?id=' + personaje.id">Detalles</a>
                         </div>
                     </div>                    
                 </div>
