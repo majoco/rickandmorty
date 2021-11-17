@@ -2,13 +2,8 @@
   <div>    
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div>
-            <router-view></router-view>
-          </div>
-          <div>
-            <router-view></router-view>
-          </div>
+        <div class="col-md-12">          
+          <HelloWorld msg="aja"/>      
         </div>
       </div>
     </div>
@@ -18,11 +13,13 @@
 
 <script>
 import Listar from './components/Listar.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+export default {  
   name: 'App',
   components: {
-    Listar
+    Listar,
+    HelloWorld
   }
 }
 </script>
@@ -46,5 +43,17 @@ export default {
 img{
   width: 100%;
   border-radius: 10px 10px 0px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .col-3 {      
+      max-width: 45%;
+      margin: 0px;
+      display: inline-block;
+  }
+  .card-body>.container>.row {
+    display: list-item;
+  }
+
 }
 </style>

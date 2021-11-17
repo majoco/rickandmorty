@@ -3,7 +3,7 @@
 
     <div class="card">
         <div class="card-header">
-            Personajes de Rick and Morty
+            <h2>Personajes de Rick and Morty</h2>
         </div>
         <div class="card-body">
 
