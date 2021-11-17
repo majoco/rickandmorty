@@ -10,9 +10,11 @@
             <div class="container">
                 <div class="row">                    
                     <div class="col-3" v-for="personaje in personajes" :key="personaje.id">
-                        <img :src="personaje.image">
-                        <h3>{{personaje.name}}</h3>                        
-                        <a class="btn btn-info" :href="'/personaje/' + personaje.id">Detalle</a>
+                        <div class="caja">
+                            <img :src="personaje.image">
+                            <h3>{{personaje.name}}</h3>                        
+                            <a class="btn btn-info" :href="'/personaje/' + personaje.id">Detalle</a>
+                        </div>
                     </div>                    
                 </div>
             </div>
